@@ -74,39 +74,39 @@ export const Products = () => {
   };
 
   return (
-    <div className="bg-[#0a0a0a] min-h-screen py-8">
+    <div className="bg-[#000000] min-h-screen py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <button 
           onClick={() => window.history.length > 2 ? navigate(-1) : navigate('/')}
-          className="flex items-center gap-2 text-[#a0a0a0] hover:text-white mb-8 transition-colors"
+          className="flex items-center gap-2 text-[#a1a1aa] hover:text-white mb-8 transition-colors"
         >
           <ArrowLeft className="h-4 w-4" /> Back
         </button>
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 pb-6 border-b border-[#2a2a2a]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 pb-6 border-b border-[rgba(255,255,255,0.1)]">
           <div>
             <h1 className="text-3xl font-bold text-white tracking-tight">
               {searchParam ? `Search Results for "${searchParam}"` : 'All Products'}
             </h1>
-            <p className="text-[#a0a0a0] mt-2">Showing {filteredProducts.length} products</p>
+            <p className="text-[#a1a1aa] mt-2">Showing {filteredProducts.length} products</p>
           </div>
           
           <div className="mt-4 md:mt-0 flex items-center gap-4">
             <button 
               onClick={() => setIsFilterOpen(!isFilterOpen)}
-              className="md:hidden flex items-center gap-2 bg-[#1a1a1a] border border-[#2a2a2a] px-4 py-2 rounded-lg text-sm font-medium"
+              className="md:hidden flex items-center gap-2 bg-[#18181b] border border-[rgba(255,255,255,0.1)] px-4 py-2 rounded-lg text-sm font-medium"
             >
               <Filter className="h-4 w-4" /> Filters
             </button>
             
             <div className="flex items-center gap-2">
-              <span className="text-sm text-[#a0a0a0] hidden md:inline">Sort by:</span>
+              <span className="text-sm text-[#a1a1aa] hidden md:inline">Sort by:</span>
               <select 
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#D4AF37]"
+                className="bg-[#18181b] border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#ef233c]"
               >
                 <option value="popular">Popularity</option>
                 <option value="newest">Newest Arrivals</option>
@@ -121,14 +121,14 @@ export const Products = () => {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar Filters */}
           <div className={`md:w-64 flex-shrink-0 ${isFilterOpen ? 'block' : 'hidden md:block'}`}>
-            <div className="bg-[#1a1a1a] p-6 rounded-xl border border-[#2a2a2a] sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar">
+            <div className="bg-[#18181b] p-6 rounded-xl border border-[rgba(255,255,255,0.1)] sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto custom-scrollbar">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="font-bold text-lg flex items-center gap-2">
                   <SlidersHorizontal className="h-5 w-5" /> Filters
                 </h2>
                 {isFilterOpen && (
                   <button onClick={() => setIsFilterOpen(false)} className="md:hidden">
-                    <X className="h-5 w-5 text-[#a0a0a0]" />
+                    <X className="h-5 w-5 text-[#a1a1aa]" />
                   </button>
                 )}
               </div>
@@ -143,7 +143,7 @@ export const Products = () => {
                       name="category" 
                       checked={selectedCategory === 'All'}
                       onChange={() => handleCategoryChange('All')}
-                      className="text-[#D4AF37] focus:ring-yellow-500"
+                      className="text-[#ef233c] focus:ring-red-500"
                     />
                     <span className="text-sm text-white">All Categories</span>
                   </label>
@@ -154,7 +154,7 @@ export const Products = () => {
                         name="category" 
                         checked={selectedCategory === cat}
                         onChange={() => handleCategoryChange(cat)}
-                        className="text-[#D4AF37] focus:ring-yellow-500"
+                        className="text-[#ef233c] focus:ring-red-500"
                       />
                       <span className="text-sm text-white">{cat}</span>
                     </label>
@@ -172,9 +172,9 @@ export const Products = () => {
                   step="500"
                   value={priceRange}
                   onChange={(e) => setPriceRange(Number(e.target.value))}
-                  className="w-full accent-[#D4AF37]"
+                  className="w-full accent-[#ef233c]"
                 />
-                <div className="flex justify-between text-xs text-[#a0a0a0] mt-2">
+                <div className="flex justify-between text-xs text-[#a1a1aa] mt-2">
                   <span>₹500</span>
                   <span>₹50,000+</span>
                 </div>
@@ -182,7 +182,7 @@ export const Products = () => {
 
               <button 
                 onClick={clearFilters}
-                className="w-full py-2 border border-[#2a2a2a] rounded-lg text-sm font-medium text-white hover:bg-[#252525] transition-colors"
+                className="w-full py-2 border border-[rgba(255,255,255,0.1)] rounded-lg text-sm font-medium text-white hover:bg-[#27272a] transition-colors"
               >
                 Clear All Filters
               </button>
@@ -198,12 +198,12 @@ export const Products = () => {
                 ))}
               </div>
             ) : (
-              <div className="bg-[#1a1a1a] p-12 rounded-xl border border-[#2a2a2a] text-center">
+              <div className="bg-[#18181b] p-12 rounded-xl border border-[rgba(255,255,255,0.1)] text-center">
                 <h3 className="text-xl font-bold text-white mb-2">No products found</h3>
-                <p className="text-[#a0a0a0] mb-6">Try adjusting your filters or search query.</p>
+                <p className="text-[#a1a1aa] mb-6">Try adjusting your filters or search query.</p>
                 <button 
                   onClick={clearFilters}
-                  className="bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                  className="bg-[#ef233c] hover:bg-[#ef233c]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                 >
                   Clear Filters
                 </button>

@@ -39,13 +39,13 @@ export const ProductImage: React.FC<ProductImageProps> = ({ src, alt, className 
     const isCardio = category.toLowerCase().includes('treadmill') || category.toLowerCase().includes('cardio');
 
     return (
-      <div className={`flex flex-col items-center justify-center bg-[#1a1a1a] text-[#a0a0a0] ${className}`}>
+      <div className={`flex flex-col items-center justify-center bg-[#18181b] text-[#a1a1aa] ${className}`}>
         {isWeight ? (
-          <Dumbbell className="h-8 w-8 mb-2 opacity-50 text-[#D4AF37]" strokeWidth={1.5} />
+          <Dumbbell className="h-8 w-8 mb-2 opacity-50 text-[#ef233c]" strokeWidth={1.5} />
         ) : isCardio ? (
-          <Activity className="h-8 w-8 mb-2 opacity-50 text-[#D4AF37]" strokeWidth={1.5} />
+          <Activity className="h-8 w-8 mb-2 opacity-50 text-[#ef233c]" strokeWidth={1.5} />
         ) : (
-          <Package className="h-8 w-8 mb-2 opacity-50 text-[#D4AF37]" strokeWidth={1.5} />
+          <Package className="h-8 w-8 mb-2 opacity-50 text-[#ef233c]" strokeWidth={1.5} />
         )}
         <span className="text-[10px] font-bold tracking-wider uppercase text-center px-2">Image Not Available</span>
       </div>
