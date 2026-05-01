@@ -20,7 +20,7 @@ export const ProductDetail = () => {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center bg-[#000000]">
         <h2 className="text-2xl font-bold mb-4 text-white">Product not found</h2>
-        <button onClick={() => navigate('/products')} className="text-[#ef233c] hover:underline">
+        <button onClick={() => navigate('/products')} className="text-[#D4AF37] hover:underline">
           Back to Products
         </button>
       </div>
@@ -84,7 +84,7 @@ export const ProductDetail = () => {
             transition={{ duration: 0.5, staggerChildren: 0.1 }}
             className="lg:col-span-5 flex flex-col justify-center"
           >
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-3 text-xs font-bold text-[#ef233c] tracking-[0.2em] uppercase">
+            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mb-3 text-xs font-bold text-[#D4AF37] tracking-[0.2em] uppercase">
               OMFITGEAR / {product.category}
             </motion.div>
             
@@ -94,7 +94,7 @@ export const ProductDetail = () => {
             
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="flex items-center gap-4 mb-8">
               <div className="flex items-center gap-1 bg-[#18181b] px-3 py-1.5 rounded-full border border-white/5">
-                <Star className="h-4 w-4 fill-[#ef233c] text-[#ef233c]" />
+                <Star className="h-4 w-4 fill-[#D4AF37] text-[#D4AF37]" />
                 <span className="font-bold text-sm text-white">{product.rating}</span>
               </div>
               <span className="text-[#a1a1aa] text-sm hover:text-white transition-colors cursor-pointer border-b border-[#a1a1aa] hover:border-white border-dashed pb-0.5">
@@ -115,7 +115,7 @@ export const ProductDetail = () => {
               animate={{ opacity: 1, y: 0 }} 
               className="bg-white/[0.02] backdrop-blur-md border border-white/10 rounded-2xl p-6 mb-8 shadow-2xl relative overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-32 h-32 bg-[#ef233c]/10 blur-3xl rounded-full -mr-16 -mt-16 pointer-events-none" />
+              <div className="absolute top-0 right-0 w-32 h-32 bg-[#D4AF37]/10 blur-3xl rounded-full -mr-16 -mt-16 pointer-events-none" />
               <p className="text-[#c0c0c0] text-lg leading-relaxed font-light">
                 {/* Simulated SEO Description based on prompt */}
                 Elevate your training with the {product.name.toLowerCase()}, engineered for peak performance and unparalleled durability. {product.description}
@@ -124,8 +124,8 @@ export const ProductDetail = () => {
               <ul className="mt-6 space-y-3">
                 {['Commercial-grade construction', 'Optimized for high-intensity training', 'Ergonomic performance design'].map((feature, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <div className="mt-1 bg-[#ef233c]/20 p-0.5 rounded-full">
-                      <Check className="h-3 w-3 text-[#ef233c]" />
+                    <div className="mt-1 bg-[#D4AF37]/20 p-0.5 rounded-full">
+                      <Check className="h-3 w-3 text-[#D4AF37]" />
                     </div>
                     <span className="text-[#a1a1aa] text-sm">{feature}</span>
                   </li>
@@ -163,7 +163,7 @@ export const ProductDetail = () => {
                 whileTap={{ scale: product.stock === 0 ? 1 : 0.98 }}
                 onClick={handleAddToCart}
                 disabled={product.stock === 0}
-                className="flex-1 bg-gradient-to-r from-[#ef233c] to-[#8d0801] hover:from-[#ff4d6d] hover:to-[#d90429] disabled:from-zinc-600 disabled:to-zinc-700 text-black py-4 px-8 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(239,35,60,0.3)] disabled:shadow-none"
+                className="flex-1 bg-gradient-to-r from-[#D4AF37] to-[#B38F24] hover:from-[#e5c149] hover:to-[#c4a030] disabled:from-zinc-600 disabled:to-zinc-700 text-black py-4 px-8 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-[0_0_20px_rgba(212,175,55,0.3)] disabled:shadow-none"
               >
                 <ShoppingCart className="h-5 w-5" />
                 {product.stock === 0 ? 'Out of Stock' : 'Add to Cart'}
@@ -174,11 +174,11 @@ export const ProductDetail = () => {
                 onClick={handleWishlistToggle}
                 className={`py-4 px-6 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all border-2 ${
                   isWishlisted 
-                    ? 'border-[#ef233c] text-[#ef233c] bg-[#ef233c]/10' 
-                    : 'border-[rgba(255,255,255,0.1)] text-[#a1a1aa] hover:border-[#ef233c] hover:text-[#ef233c] bg-[#18181b]'
+                    ? 'border-[#D4AF37] text-[#D4AF37] bg-[#D4AF37]/10' 
+                    : 'border-[rgba(255,255,255,0.1)] text-[#a1a1aa] hover:border-[#D4AF37] hover:text-[#D4AF37] bg-[#18181b]'
                 }`}
               >
-                <Heart className={`h-5 w-5 transition-colors ${isWishlisted ? 'fill-[#ef233c]' : ''}`} />
+                <Heart className={`h-5 w-5 transition-colors ${isWishlisted ? 'fill-[#D4AF37]' : ''}`} />
               </motion.button>
             </motion.div>
 
@@ -208,7 +208,7 @@ export const ProductDetail = () => {
             {/* Trust Badges */}
             <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-[rgba(255,255,255,0.1)] pt-8">
               <div className="flex items-center gap-4 bg-[#141414] p-4 rounded-xl border border-white/5">
-                <div className="bg-[#ef233c]/10 p-2.5 rounded-full text-[#ef233c]">
+                <div className="bg-[#D4AF37]/10 p-2.5 rounded-full text-[#D4AF37]">
                   <Truck className="h-5 w-5" />
                 </div>
                 <div>
@@ -217,7 +217,7 @@ export const ProductDetail = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4 bg-[#141414] p-4 rounded-xl border border-white/5">
-                <div className="bg-[#ef233c]/10 p-2.5 rounded-full text-[#ef233c]">
+                <div className="bg-[#D4AF37]/10 p-2.5 rounded-full text-[#D4AF37]">
                   <Shield className="h-5 w-5" />
                 </div>
                 <div>

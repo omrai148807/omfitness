@@ -26,7 +26,7 @@ export const Cart = () => {
         </p>
         <Link 
           to="/products" 
-          className="bg-[#ef233c] hover:bg-[#ef233c]/80 text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none shadow-none"
+          className="bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none shadow-none"
         >
           Start Shopping
         </Link>
@@ -62,13 +62,13 @@ export const Cart = () => {
                     <div className="col-span-6 flex items-center gap-4 w-full">
                       <ProductImage src={item.image} category={item.category} alt={item.name} className="w-20 h-20 object-cover rounded-lg bg-[#27272a]" />
                       <div className="flex-1">
-                        <Link to={`/products/${item.id}`} className="font-bold text-white hover:text-[#ef233c] transition-colors line-clamp-2">
+                        <Link to={`/products/${item.id}`} className="font-bold text-white hover:text-[#D4AF37] transition-colors line-clamp-2">
                           {item.name}
                         </Link>
                         <div className="text-sm text-[#a1a1aa] mt-1">{item.category}</div>
                         <button 
                           onClick={() => removeFromCart(item.id)}
-                          className="text-[#ef233c] text-sm font-medium mt-2 flex items-center gap-1 hover:text-[#ef233c]"
+                          className="text-[#D4AF37] text-sm font-medium mt-2 flex items-center gap-1 hover:text-[#D4AF37]"
                         >
                           <Trash2 className="h-3 w-3" /> Remove
                         </button>
@@ -130,14 +130,14 @@ export const Cart = () => {
                 <div className="pt-4 border-t border-[rgba(255,255,255,0.1)]">
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-white">Total</span>
-                    <span className="text-2xl font-extrabold text-[#ef233c]">₹{Number(total || 0).toLocaleString('en-IN')}</span>
+                    <span className="text-2xl font-extrabold text-[#D4AF37]">₹{Number(total || 0).toLocaleString('en-IN')}</span>
                   </div>
                 </div>
               </div>
 
               <button 
                 onClick={() => navigate('/checkout')}
-                className="w-full bg-[#ef233c] hover:bg-[#ef233c] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-colors shadow-none"
+                className="w-full bg-[#D4AF37] hover:bg-[#D4AF37] text-white py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-colors shadow-none"
               >
                 Proceed to Checkout <ArrowRight className="h-5 w-5" />
               </button>

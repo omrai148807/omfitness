@@ -42,7 +42,7 @@ export const Profile = () => {
                 </div>
               </div>
               <div className="p-2">
-                <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-[#ef233c] bg-[#ef233c]/5 rounded-lg">
+                <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-[#D4AF37] bg-[#D4AF37]/5 rounded-lg">
                   <User className="h-4 w-4" /> Profile Info
                 </button>
                 <button className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-[#a1a1aa] hover:bg-[#000000] rounded-lg transition-colors">
@@ -55,7 +55,7 @@ export const Profile = () => {
                   <Heart className="h-4 w-4" /> Wishlist
                 </button>
                 <div className="my-2 border-t border-[rgba(255,255,255,0.1)]"></div>
-                <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-[#a1a1aa] hover:text-[#ef233c] hover:bg-[#ef233c]/5 rounded-lg transition-colors">
+                <button onClick={handleLogout} className="w-full flex items-center gap-3 px-4 py-3 text-sm font-medium text-[#a1a1aa] hover:text-[#D4AF37] hover:bg-[#D4AF37]/5 rounded-lg transition-colors">
                   <LogOut className="h-4 w-4" /> Logout
                 </button>
               </div>
@@ -69,7 +69,7 @@ export const Profile = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">Full Name</label>
-                  <input type="text" defaultValue={user.name} className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-red-500 focus:border-yellow-500" />
+                  <input type="text" defaultValue={user.name} className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-yellow-500 focus:border-yellow-500" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">Email Address</label>
@@ -77,11 +77,11 @@ export const Profile = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-white mb-2">Phone Number</label>
-                  <input type="tel" placeholder="+91" className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-red-500 focus:border-yellow-500" />
+                  <input type="tel" placeholder="+91" className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-yellow-500 focus:border-yellow-500" />
                 </div>
               </div>
               <div className="mt-6">
-                <button className="bg-[#ef233c] hover:bg-[#ef233c]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                <button className="bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors">
                   Save Changes
                 </button>
               </div>
@@ -92,7 +92,7 @@ export const Profile = () => {
               <div className="text-center py-8">
                 <Package className="h-12 w-12 text-[#a1a1aa] mx-auto mb-3" />
                 <p className="text-[#a1a1aa] mb-4">You haven't placed any orders yet.</p>
-                <button onClick={() => navigate('/products')} className="text-[#ef233c] font-medium hover:underline">
+                <button onClick={() => navigate('/products')} className="text-[#D4AF37] font-medium hover:underline">
                   Start Shopping
                 </button>
               </div>

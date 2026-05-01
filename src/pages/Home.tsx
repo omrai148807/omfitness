@@ -16,14 +16,14 @@ export const Home = () => {
         {/* Global Background */}
         <div className="absolute inset-0 z-0 pointer-events-none">
             <img 
-              src="https://wallpaperbat.com/img/99007441-gym-dark.jpg"
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=2000"
               alt="Dark Gym Background"
               className="absolute inset-0 w-full h-full object-cover opacity-30"
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-black"></div>
             <div className="absolute top-0 left-0 w-[1px] h-[1px] bg-transparent stars-1 animate-[animStar_50s_linear_infinite]"></div>
             <div className="absolute top-0 left-0 w-[2px] h-[2px] bg-transparent stars-2 animate-[animStar_80s_linear_infinite]"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-600/10 rounded-full blur-[120px]"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-yellow-600/10 rounded-full blur-[120px]"></div>
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(circle_at_center,black_40%,transparent_80%)]"></div>
         </div>
         
@@ -32,7 +32,7 @@ export const Home = () => {
           <motion.div 
             animate={{ y: [0, -40, 0], rotate: [0, 10, -10, 0] }}
             transition={{ repeat: Infinity, duration: 8, ease: "easeInOut" }}
-            className="absolute top-[15%] left-[60%] text-[#ef233c]"
+            className="absolute top-[15%] left-[60%] text-[#D4AF37]"
           >
             <Dumbbell size={120} strokeWidth={0.5} />
           </motion.div>
@@ -46,7 +46,7 @@ export const Home = () => {
           <motion.div 
             animate={{ y: [0, 30, 0], rotate: [0, 15, -15, 0], scale: [1, 1.1, 1] }}
             transition={{ repeat: Infinity, duration: 10, ease: "easeInOut" }}
-            className="absolute bottom-[20%] left-[8%] text-[#ef233c]"
+            className="absolute bottom-[20%] left-[8%] text-[#D4AF37]"
           >
             <Flame size={150} strokeWidth={0.5} />
           </motion.div>
@@ -56,13 +56,13 @@ export const Home = () => {
           <div className="max-w-3xl text-center md:text-left mx-auto md:mx-0">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
               <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#ef233c]"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#D4AF37]"></span>
               </span>
-              <span className="text-xs font-medium text-red-100/90 tracking-wide font-heading">
+              <span className="text-xs font-medium text-yellow-100/90 tracking-wide font-heading">
                   NEW COLLECTION 2026
               </span>
-              <ArrowRight className="w-3 h-3 text-red-400" />
+              <ArrowRight className="w-3 h-3 text-yellow-400" />
             </div>
 
             <motion.h1 
@@ -73,9 +73,9 @@ export const Home = () => {
             >
               <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40">Build Your</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40">
-                  Dream <span className="text-[#ef233c] inline-block relative">
+                  Dream <span className="text-[#D4AF37] inline-block relative">
                       Gym
-                      <svg className="absolute w-full h-3 -bottom-2 left-0 text-[#ef233c] opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
+                      <svg className="absolute w-full h-3 -bottom-2 left-0 text-[#D4AF37] opacity-60" viewBox="0 0 100 10" preserveAspectRatio="none">
                           <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="2" fill="none" />
                       </svg>
                   </span>
@@ -122,19 +122,19 @@ export const Home = () => {
           className="flex space-x-12 items-center text-zinc-500 font-bold tracking-widest uppercase font-heading text-sm"
         >
            {/* We repeat the content multiple times to make it a seamless infinite loop */}
-           <span>POWER.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>STRENGTH.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>ENDURANCE.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>OMFITGEAR.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>PERFORMANCE.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>DEDICATION.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>POWER.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>STRENGTH.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>ENDURANCE.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>OMFITGEAR.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>PERFORMANCE.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>DEDICATION.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
-           <span>POWER.</span> <span className="mx-4 text-[#ef233c] font-black">✖</span> 
+           <span>POWER.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>STRENGTH.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>ENDURANCE.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>OMFITGEAR.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>PERFORMANCE.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>DEDICATION.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>POWER.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>STRENGTH.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>ENDURANCE.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>OMFITGEAR.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>PERFORMANCE.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>DEDICATION.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
+           <span>POWER.</span> <span className="mx-4 text-[#D4AF37] font-black">✖</span> 
         </motion.div>
       </div>
 
@@ -144,7 +144,7 @@ export const Home = () => {
           <div className="mb-20 text-center max-w-3xl mx-auto animate-fade-up">
             <h2 className="text-4xl md:text-5xl font-semibold text-white tracking-tight font-heading mb-6">
                 The Equipment for <br />
-                <span className="text-[#ef233c]">Modern Athletes</span>
+                <span className="text-[#D4AF37]">Modern Athletes</span>
             </h2>
             <p className="text-lg text-zinc-400 font-light">
                 Replace your fragmented toolset with one cohesive gym setup driven by results.
@@ -160,13 +160,13 @@ export const Home = () => {
           >
             <motion.div whileHover={{ scale: 1.02 }} className="group relative overflow-hidden p-8 border border-white/10 bg-gradient-to-b from-zinc-900/50 to-black hover:border-white/20 transition-all rounded-xl">
               <div className="relative z-10 flex flex-col h-full">
-                <div className="mb-6 inline-flex p-3 rounded-lg bg-white/5 border border-white/10 text-[#ef233c]">
+                <div className="mb-6 inline-flex p-3 rounded-lg bg-white/5 border border-white/10 text-[#D4AF37]">
                   <Truck className="h-6 w-6" />
                 </div>
                 <h3 className="text-2xl font-semibold text-white font-heading mb-2">Free Shipping</h3>
                 <p className="text-zinc-400">On all orders over ₹5,000 nationwide.</p>
               </div>
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none" style={{ background: 'radial-gradient(circle at top right, #ef233c, transparent 70%)' }}></div>
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none" style={{ background: 'radial-gradient(circle at top right, #D4AF37, transparent 70%)' }}></div>
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.02 }} className="group relative overflow-hidden p-8 border border-white/10 bg-black hover:border-white/20 transition-all rounded-xl lg:col-span-1">
@@ -204,7 +204,7 @@ export const Home = () => {
             className="flex items-center justify-between mb-10"
           >
             <h2 className="text-4xl font-semibold text-white tracking-tight font-heading">Shop by Category</h2>
-            <Link to="/products" className="text-[#ef233c] hover:text-red-400 font-medium flex items-center gap-1 group">
+            <Link to="/products" className="text-[#D4AF37] hover:text-yellow-400 font-medium flex items-center gap-1 group">
               View All <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -228,7 +228,7 @@ export const Home = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
                   <rect width="600" height="600" fill="#000000"/>
                   <rect x="50" y="50" width="500" height="500" rx="20" fill="#111111" stroke="#333" stroke-width="2"/>
-                  <text x="300" y="300" font-family="system-ui, sans-serif" font-size="40" font-weight="bold" fill="#ef233c" text-anchor="middle" dominant-baseline="middle">
+                  <text x="300" y="300" font-family="system-ui, sans-serif" font-size="40" font-weight="bold" fill="#D4AF37" text-anchor="middle" dominant-baseline="middle">
                     ${category}
                   </text>
                 </svg>
@@ -255,7 +255,7 @@ export const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-80" />
                     <div className="absolute bottom-0 left-0 p-6 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform">
                       <h3 className="text-white font-semibold font-heading text-xl mb-1">{category}</h3>
-                      <span className="text-[#ef233c] text-xs font-mono tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">EXPLORE &rarr;</span>
+                      <span className="text-[#D4AF37] text-xs font-mono tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">EXPLORE &rarr;</span>
                     </div>
                   </Link>
                 </motion.div>
@@ -306,7 +306,7 @@ export const Home = () => {
       </section>
 
       {/* Discount Banner */}
-      <section className="relative py-24 bg-[#ef233c] text-black text-center px-4 overflow-hidden border-y border-white/10">
+      <section className="relative py-24 bg-[#D4AF37] text-black text-center px-4 overflow-hidden border-y border-white/10">
         {/* Animated Banner Background */}
         <div className="absolute inset-0 z-0 overflow-hidden opacity-10 pointer-events-none">
           <motion.div
@@ -397,11 +397,11 @@ export const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6 font-mono text-[#ef233c] text-xs">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6 font-mono text-[#D4AF37] text-xs">
                  <ShieldCheck className="w-3 h-3" /> OUR STORY
               </div>
               <h3 className="text-4xl md:text-5xl font-semibold text-white font-heading leading-tight mb-6">
-                Forged in Iron. <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ef233c] to-red-400">Built for Glory.</span>
+                Forged in Iron. <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] to-yellow-400">Built for Glory.</span>
               </h3>
               <p className="text-lg text-zinc-400 mb-6 font-light leading-relaxed">
                 At <span className="text-white font-medium">OMFITGEAR</span>, we believe that true strength is earned, not given. What started as a small garage workshop in 2020 has evolved into a premium fitness equipment brand trusted by world-class athletes and dedicated home gym enthusiasts alike.
@@ -412,7 +412,7 @@ export const Home = () => {
                   <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold">Athletes</div>
                 </div>
                 <div className="p-6 bg-zinc-900 border border-white/10 rounded-xl text-center flex-1">
-                  <div className="text-4xl font-bold text-[#ef233c] mb-2 font-heading">5Y</div>
+                  <div className="text-4xl font-bold text-[#D4AF37] mb-2 font-heading">5Y</div>
                   <div className="text-xs text-zinc-500 uppercase tracking-widest font-bold">Warranty</div>
                 </div>
               </div>
@@ -424,7 +424,7 @@ export const Home = () => {
               transition={{ duration: 0.8 }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-[#ef233c] blur-[100px] opacity-20 transform scale-75" />
+              <div className="absolute inset-0 bg-[#D4AF37] blur-[100px] opacity-20 transform scale-75" />
               <img 
                 src="https://nikestrength.com/cdn/shop/files/BSAL-PC20_CAP_HO23_20KG-Barbell-Chrome_1391_b8330fb5-d4f4-40da-8b27-51963ad57d7d_1066x.jpg" 
                 alt="OMFITGEAR Gym Facility" 
@@ -460,7 +460,7 @@ export const Home = () => {
           >
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="bg-black p-8 rounded-2xl border border-white/10 relative hover:border-white/20 transition-all">
               <Quote className="absolute top-6 right-6 text-white/5 w-12 h-12" />
-              <div className="flex text-[#ef233c] mb-6">
+              <div className="flex text-[#D4AF37] mb-6">
                 {[1,2,3,4,5].map(star => <Star key={star} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-zinc-300 font-light mb-8 relative z-10 leading-relaxed">
@@ -475,16 +475,16 @@ export const Home = () => {
               </div>
             </motion.div>
 
-            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="bg-zinc-900/40 p-8 rounded-2xl border border-[#ef233c] relative shadow-[0_0_30px_rgba(239,35,60,0.1)] scale-105 z-10">
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="bg-zinc-900/40 p-8 rounded-2xl border border-[#D4AF37] relative shadow-[0_0_30px_rgba(212,175,55,0.1)] scale-105 z-10">
               <Quote className="absolute top-6 right-6 text-white/5 w-12 h-12" />
-              <div className="flex text-[#ef233c] mb-6">
+              <div className="flex text-[#D4AF37] mb-6">
                 {[1,2,3,4,5].map(star => <Star key={star} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-zinc-200 font-medium mb-8 relative z-10 leading-relaxed">
                 "I bought the IronForge Olympic plates and a barbell. The knurling is aggressive but perfect. Customer service was also extremely responsive."
               </p>
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 bg-[#ef233c] rounded-full flex items-center justify-center text-white font-bold text-sm">MR</div>
+                <div className="w-10 h-10 bg-[#D4AF37] rounded-full flex items-center justify-center text-white font-bold text-sm">MR</div>
                 <div>
                   <h4 className="text-white font-medium text-sm">Marcus R.</h4>
                   <p className="text-[10px] text-zinc-400 uppercase tracking-widest font-semibold mt-1">Verified Buyer</p>
@@ -494,7 +494,7 @@ export const Home = () => {
 
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="bg-black p-8 rounded-2xl border border-white/10 relative hover:border-white/20 transition-all">
               <Quote className="absolute top-6 right-6 text-white/5 w-12 h-12" />
-              <div className="flex text-[#ef233c] mb-6">
+              <div className="flex text-[#D4AF37] mb-6">
                 {[1,2,3,4,5].map(star => <Star key={star} className="w-4 h-4 fill-current" />)}
               </div>
               <p className="text-zinc-300 font-light mb-8 relative z-10 leading-relaxed">

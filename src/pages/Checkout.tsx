@@ -130,7 +130,7 @@ export const Checkout = () => {
         </p>
         <button 
           onClick={() => navigate('/products')}
-          className="bg-[#ef233c] hover:bg-[#ef233c] text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none"
+          className="bg-[#D4AF37] hover:bg-[#D4AF37] text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none"
         >
           Continue Shopping
         </button>
@@ -153,9 +153,9 @@ export const Checkout = () => {
           <div className="flex-1">
             {/* Steps Indicator */}
             <div className="flex items-center mb-8">
-              <div className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${step === 1 ? 'bg-[#ef233c] text-white' : 'bg-[#28a745] text-white'}`}>1</div>
+              <div className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${step === 1 ? 'bg-[#D4AF37] text-white' : 'bg-[#28a745] text-white'}`}>1</div>
               <div className={`flex-1 h-1 mx-2 ${step === 2 ? 'bg-[#28a745]' : 'bg-zinc-200'}`}></div>
-              <div className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${step === 2 ? 'bg-[#ef233c] text-white' : 'bg-zinc-200 text-[#a1a1aa]'}`}>2</div>
+              <div className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${step === 2 ? 'bg-[#D4AF37] text-white' : 'bg-zinc-200 text-[#a1a1aa]'}`}>2</div>
             </div>
 
             {step === 1 ? (
@@ -163,25 +163,29 @@ export const Checkout = () => {
                 <h2 className="text-xl font-bold text-white mb-6">Shipping Address</h2>
                 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                  <div>
+                  <div className="md:col-span-2">
                     <label className="block text-sm font-medium text-white mb-2">Full Name</label>
-                    <input required type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]" />
+                    <input required type="text" name="fullName" value={formData.fullName} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-white mb-2">Email Address</label>
+                    <input required type="email" name="email" value={formData.email} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">Phone Number</label>
-                    <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]" />
+                    <input required type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
                   </div>
                   <div className="md:col-span-2">
                     <label className="block text-sm font-medium text-white mb-2">Street Address</label>
-                    <input required type="text" name="street" value={formData.street} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]" />
+                    <input required type="text" name="street" value={formData.street} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">City</label>
-                    <input required type="text" name="city" value={formData.city} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]" />
+                    <input required type="text" name="city" value={formData.city} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">State</label>
-                    <select required name="state" value={formData.state} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]">
+                    <select required name="state" value={formData.state} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]">
                       <option value="" className="bg-[#000000] text-white">Select State</option>
                       <option value="Andhra Pradesh" className="bg-[#000000] text-white">Andhra Pradesh</option>
                       <option value="Arunachal Pradesh" className="bg-[#000000] text-white">Arunachal Pradesh</option>
@@ -223,10 +227,10 @@ export const Checkout = () => {
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-white mb-2">PIN Code</label>
-                    <input required type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c]" />
+                    <input required type="text" name="zipCode" value={formData.zipCode} onChange={handleChange} className="w-full bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37]" />
                   </div>
                 </div>
-                <button type="submit" className="w-full bg-[#ef233c] hover:bg-[#ef233c] text-white py-4 rounded-xl font-bold text-lg transition-colors">
+                <button type="submit" className="w-full bg-[#D4AF37] hover:bg-[#D4AF37] text-white py-4 rounded-xl font-bold text-lg transition-colors">
                   Continue to Payment
                 </button>
               </form>
@@ -236,7 +240,7 @@ export const Checkout = () => {
                 
                 <div className="space-y-4 mb-8">
                   <label className="flex items-center p-4 border border-[rgba(255,255,255,0.1)] rounded-xl cursor-pointer hover:bg-[#000000] transition-colors">
-                    <input type="radio" name="paymentMethod" value="upi" checked={formData.paymentMethod === 'upi'} onChange={handleChange} className="text-[#ef233c] focus:ring-red-500 w-5 h-5" />
+                    <input type="radio" name="paymentMethod" value="upi" checked={formData.paymentMethod === 'upi'} onChange={handleChange} className="text-[#D4AF37] focus:ring-yellow-500 w-5 h-5" />
                     <div className="ml-4">
                       <span className="block font-bold text-white">UPI (GPay, PhonePe, Paytm)</span>
                       <span className="block text-sm text-[#a1a1aa]">Pay directly from your bank account</span>
@@ -244,7 +248,7 @@ export const Checkout = () => {
                   </label>
                   
                   <label className="flex items-center p-4 border border-[rgba(255,255,255,0.1)] rounded-xl cursor-pointer hover:bg-[#000000] transition-colors">
-                    <input type="radio" name="paymentMethod" value="card" checked={formData.paymentMethod === 'card'} onChange={handleChange} className="text-[#ef233c] focus:ring-red-500 w-5 h-5" />
+                    <input type="radio" name="paymentMethod" value="card" checked={formData.paymentMethod === 'card'} onChange={handleChange} className="text-[#D4AF37] focus:ring-yellow-500 w-5 h-5" />
                     <div className="ml-4">
                       <span className="block font-bold text-white">Credit / Debit Card</span>
                       <span className="block text-sm text-[#a1a1aa]">Visa, MasterCard, RuPay</span>
@@ -252,7 +256,7 @@ export const Checkout = () => {
                   </label>
                   
                   <label className="flex items-center p-4 border border-[rgba(255,255,255,0.1)] rounded-xl cursor-pointer hover:bg-[#000000] transition-colors">
-                    <input type="radio" name="paymentMethod" value="cod" checked={formData.paymentMethod === 'cod'} onChange={handleChange} className="text-[#ef233c] focus:ring-red-500 w-5 h-5" />
+                    <input type="radio" name="paymentMethod" value="cod" checked={formData.paymentMethod === 'cod'} onChange={handleChange} className="text-[#D4AF37] focus:ring-yellow-500 w-5 h-5" />
                     <div className="ml-4">
                       <span className="block font-bold text-white">Cash on Delivery</span>
                       <span className="block text-sm text-[#a1a1aa]">Pay when you receive the order</span>
@@ -264,7 +268,7 @@ export const Checkout = () => {
                   <button disabled={isSubmitting} type="button" onClick={() => setStep(1)} className="w-1/3 bg-[#27272a] hover:bg-zinc-200 text-white py-4 rounded-xl font-bold text-lg transition-colors disabled:opacity-50">
                     Back
                   </button>
-                  <button disabled={isSubmitting} type="submit" className="w-2/3 flex items-center justify-center gap-2 bg-[#ef233c] hover:bg-[#ef233c]/80 text-white py-4 rounded-xl font-bold text-lg transition-colors shadow-none disabled:opacity-70">
+                  <button disabled={isSubmitting} type="submit" className="w-2/3 flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white py-4 rounded-xl font-bold text-lg transition-colors shadow-none disabled:opacity-70">
                     {isSubmitting ? (
                       <><Loader2 className="w-5 h-5 animate-spin" /> Processing...</>
                     ) : (
@@ -273,7 +277,7 @@ export const Checkout = () => {
                   </button>
                 </div>
                 {error && (
-                  <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg text-sm text-center">
+                  <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 rounded-lg text-sm text-center">
                     {error}
                   </div>
                 )}
@@ -307,13 +311,13 @@ export const Checkout = () => {
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
                     disabled={!!appliedCoupon}
-                    className="flex-1 bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#ef233c] focus:border-[#ef233c] text-sm disabled:opacity-50 uppercase"
+                    className="flex-1 bg-[#000000] text-white border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 focus:ring-[#D4AF37] focus:border-[#D4AF37] text-sm disabled:opacity-50 uppercase"
                   />
                   {!appliedCoupon ? (
                     <button 
                       type="button"
                       onClick={handleApplyCoupon}
-                      className="bg-[#27272a] hover:bg-[#ef233c] hover:text-black text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors"
+                      className="bg-[#27272a] hover:bg-[#D4AF37] hover:text-black text-white px-4 py-2 rounded-lg text-sm font-bold transition-colors"
                     >
                       Apply
                     </button>
@@ -321,7 +325,7 @@ export const Checkout = () => {
                     <button 
                       type="button"
                       onClick={handleRemoveCoupon}
-                      className="bg-red-500/10 hover:bg-red-500/20 text-red-500 px-4 py-2 rounded-lg text-sm font-bold transition-colors"
+                      className="bg-yellow-500/10 hover:bg-yellow-500/20 text-yellow-500 px-4 py-2 rounded-lg text-sm font-bold transition-colors"
                     >
                       Remove
                     </button>
@@ -330,8 +334,8 @@ export const Checkout = () => {
                 {!appliedCoupon && (
                   <div className="flex items-center gap-2 mt-2 pt-1 overflow-x-auto pb-1">
                     <span className="text-xs text-[#a1a1aa] whitespace-nowrap">Try:</span>
-                    <button type="button" onClick={() => setCouponCode('CARDIO20')} className="text-xs font-mono text-[#ef233c] border border-[#ef233c]/30 hover:bg-[#ef233c]/10 px-2 py-0.5 rounded border-dashed whitespace-nowrap transition-colors">CARDIO20 (-20%)</button>
-                    <button type="button" onClick={() => setCouponCode('FIT10')} className="text-xs font-mono text-[#ef233c] border border-[#ef233c]/30 hover:bg-[#ef233c]/10 px-2 py-0.5 rounded border-dashed whitespace-nowrap transition-colors">FIT10 (-10%)</button>
+                    <button type="button" onClick={() => setCouponCode('CARDIO20')} className="text-xs font-mono text-[#D4AF37] border border-[#D4AF37]/30 hover:bg-[#D4AF37]/10 px-2 py-0.5 rounded border-dashed whitespace-nowrap transition-colors">CARDIO20 (-20%)</button>
+                    <button type="button" onClick={() => setCouponCode('FIT10')} className="text-xs font-mono text-[#D4AF37] border border-[#D4AF37]/30 hover:bg-[#D4AF37]/10 px-2 py-0.5 rounded border-dashed whitespace-nowrap transition-colors">FIT10 (-10%)</button>
                   </div>
                 )}
                 {appliedCoupon && (
@@ -351,12 +355,12 @@ export const Checkout = () => {
                 {appliedCoupon && (
                   <div className="flex justify-between text-[#a1a1aa]">
                     <span>Discount ({appliedCoupon})</span>
-                    <span className="font-medium text-[#ef233c]">-₹{Number(discountAmount || 0).toLocaleString('en-IN')}</span>
+                    <span className="font-medium text-[#D4AF37]">-₹{Number(discountAmount || 0).toLocaleString('en-IN')}</span>
                   </div>
                 )}
                 <div className="pt-3 border-t border-[rgba(255,255,255,0.1)] flex justify-between items-center">
                   <span className="text-lg font-bold text-white">Total</span>
-                  <span className="text-xl font-extrabold text-[#ef233c]">₹{Number(finalTotal || 0).toLocaleString('en-IN')}</span>
+                  <span className="text-xl font-extrabold text-[#D4AF37]">₹{Number(finalTotal || 0).toLocaleString('en-IN')}</span>
                 </div>
               </div>
             </div>

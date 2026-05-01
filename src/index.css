@@ -4,9 +4,8 @@
 @theme {
   --color-bg-dark: #000000;
   --color-card-bg: #111111;
-  --color-accent-gold: #ef233c; /* Re-using the variable name but setting to red to avoid breaking old components, though I should use accent-red going forward */
-  --color-accent-red: #ef233c;
-  --color-accent-red-glow: rgba(239, 35, 60, 0.5);
+  --color-accent-gold: #D4AF37;
+  --color-accent-gold-glow: rgba(212,175,55, 0.5);
   --color-text-white: #ffffff;
   --color-text-gray: #a1a1aa;
   --color-border-color: rgba(255, 255, 255, 0.1);
@@ -15,8 +14,8 @@
 }
 
 :root {
-  --accent-red: #ef233c;
-  --accent-red-glow: rgba(239, 35, 60, 0.5);
+  --accent-gold: #D4AF37;
+  --accent-gold-glow: rgba(212,175,55, 0.5);
 }
 
 body {
@@ -70,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 9999px;
     padding: 1rem 2.5rem;
     background: linear-gradient(#000000, #000000) padding-box,
-    conic-gradient(from var(--gradient-angle), transparent 0%, #ef233c 5%, #ef233c 15%, #ef233c 30%, transparent 40%, transparent 100%) border-box;
+    conic-gradient(from var(--gradient-angle), transparent 0%, #D4AF37 5%, #D4AF37 15%, #D4AF37 30%, transparent 40%, transparent 100%) border-box;
     border: 2px solid transparent;
     cursor: pointer;
     isolation: isolate;
@@ -103,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 ::selection {
-    background: #ef233c;
+    background: #D4AF37;
     color: white;
 }
 

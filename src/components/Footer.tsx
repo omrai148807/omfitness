@@ -9,7 +9,7 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-24 relative z-10">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-2 mb-6 group">
-            <motion.div whileHover={{ rotate: 90 }} transition={{ duration: 0.3 }} className="w-5 h-5 bg-[#ef233c] rounded-sm rotate-45 flex items-center justify-center">
+            <motion.div whileHover={{ rotate: 90 }} transition={{ duration: 0.3 }} className="w-5 h-5 bg-[#D4AF37] rounded-sm rotate-45 flex items-center justify-center">
             </motion.div>
             <span className="text-2xl font-bold font-heading tracking-tight text-white">OMFITGEAR</span>
           </Link>
@@ -25,7 +25,7 @@ export const Footer = () => {
         </div>
         
         <div>
-          <h4 className="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-6">Shop</h4>
+          <h4 className="text-xs font-bold text-[#D4AF37] uppercase tracking-widest mb-6">Shop</h4>
           <ul className="space-y-4 text-zinc-400 text-sm">
             <li><Link to="/products?category=Dumbbells" className="hover:text-white transition-colors">Dumbbells</Link></li>
             <li><Link to="/products?category=Barbells" className="hover:text-white transition-colors">Barbells</Link></li>
@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
         
         <div>
-          <h4 className="text-xs font-bold text-[#ef233c] uppercase tracking-widest mb-6">Company</h4>
+          <h4 className="text-xs font-bold text-[#D4AF37] uppercase tracking-widest mb-6">Company</h4>
           <ul className="space-y-4 text-zinc-400 text-sm">
             <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>

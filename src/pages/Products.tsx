@@ -106,7 +106,7 @@ export const Products = () => {
               <select 
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
-                className="bg-[#18181b] border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#ef233c]"
+                className="bg-[#18181b] border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-[#D4AF37]"
               >
                 <option value="popular">Popularity</option>
                 <option value="newest">Newest Arrivals</option>
@@ -143,7 +143,7 @@ export const Products = () => {
                       name="category" 
                       checked={selectedCategory === 'All'}
                       onChange={() => handleCategoryChange('All')}
-                      className="text-[#ef233c] focus:ring-red-500"
+                      className="text-[#D4AF37] focus:ring-yellow-500"
                     />
                     <span className="text-sm text-white">All Categories</span>
                   </label>
@@ -154,7 +154,7 @@ export const Products = () => {
                         name="category" 
                         checked={selectedCategory === cat}
                         onChange={() => handleCategoryChange(cat)}
-                        className="text-[#ef233c] focus:ring-red-500"
+                        className="text-[#D4AF37] focus:ring-yellow-500"
                       />
                       <span className="text-sm text-white">{cat}</span>
                     </label>
@@ -172,7 +172,7 @@ export const Products = () => {
                   step="500"
                   value={priceRange}
                   onChange={(e) => setPriceRange(Number(e.target.value))}
-                  className="w-full accent-[#ef233c]"
+                  className="w-full accent-[#D4AF37]"
                 />
                 <div className="flex justify-between text-xs text-[#a1a1aa] mt-2">
                   <span>₹500</span>
@@ -203,7 +203,7 @@ export const Products = () => {
                 <p className="text-[#a1a1aa] mb-6">Try adjusting your filters or search query.</p>
                 <button 
                   onClick={clearFilters}
-                  className="bg-[#ef233c] hover:bg-[#ef233c]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
+                  className="bg-[#D4AF37] hover:bg-[#D4AF37]/80 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                 >
                   Clear Filters
                 </button>

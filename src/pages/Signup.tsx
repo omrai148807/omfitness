@@ -29,7 +29,7 @@ export const Signup = () => {
       <div className="max-w-md w-full space-y-8 bg-[#18181b] p-8 rounded-2xl shadow-none border border-[rgba(255,255,255,0.1)]">
         <div className="text-center">
           <div className="flex justify-center mb-4">
-            <div className="bg-[#ef233c]/10 p-3 rounded-full text-[#ef233c]">
+            <div className="bg-[#D4AF37]/10 p-3 rounded-full text-[#D4AF37]">
               <Dumbbell className="h-8 w-8" />
             </div>
           </div>
@@ -47,7 +47,7 @@ export const Signup = () => {
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-red-500 focus:border-yellow-500"
+                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="John Doe"
               />
             </div>
@@ -58,7 +58,7 @@ export const Signup = () => {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-red-500 focus:border-yellow-500"
+                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="you@example.com"
               />
             </div>
@@ -69,7 +69,7 @@ export const Signup = () => {
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-red-500 focus:border-yellow-500"
+                className="w-full border border-[rgba(255,255,255,0.1)] rounded-lg px-4 py-3 focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="••••••••"
               />
             </div>
@@ -77,7 +77,7 @@ export const Signup = () => {
 
           <button
             type="submit"
-            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-none text-sm font-bold text-white bg-[#ef233c] hover:bg-[#ef233c]/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 transition-colors"
+            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-none text-sm font-bold text-white bg-[#D4AF37] hover:bg-[#D4AF37]/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-colors"
           >
             Create Account
           </button>
@@ -86,7 +86,7 @@ export const Signup = () => {
         <div className="text-center mt-6">
           <p className="text-sm text-[#a1a1aa]">
             Already have an account?{' '}
-            <Link to="/login" className="font-bold text-[#ef233c] hover:text-[#ef233c]/80">
+            <Link to="/login" className="font-bold text-[#D4AF37] hover:text-[#D4AF37]/80">
               Sign in
             </Link>
           </p>

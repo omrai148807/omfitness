@@ -33,7 +33,7 @@ export const Wishlist = () => {
         </p>
         <Link 
           to="/products" 
-          className="bg-[#ef233c] hover:bg-[#ef233c] text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none"
+          className="bg-[#D4AF37] hover:bg-[#D4AF37] text-white px-8 py-4 rounded-xl font-bold transition-colors shadow-none"
         >
           Explore Products
         </Link>
@@ -59,14 +59,14 @@ export const Wishlist = () => {
                 <ProductImage src={product.image} category={product.category} alt={product.name} className="w-full h-full object-cover" />
                 <button 
                   onClick={() => removeFromWishlist(product.id)}
-                  className="absolute top-3 right-3 p-2 rounded-full bg-[#18181b]/80 backdrop-blur-sm hover:bg-[#18181b] text-[#ef233c] transition-colors z-10"
+                  className="absolute top-3 right-3 p-2 rounded-full bg-[#18181b]/80 backdrop-blur-sm hover:bg-[#18181b] text-[#D4AF37] transition-colors z-10"
                 >
                   <Trash2 className="h-5 w-5" />
                 </button>
               </div>
               <div className="p-4 flex flex-col flex-1">
                 <Link to={`/products/${product.id}`}>
-                  <h3 className="font-semibold text-white line-clamp-2 hover:text-[#ef233c] transition-colors mb-2">
+                  <h3 className="font-semibold text-white line-clamp-2 hover:text-[#D4AF37] transition-colors mb-2">
                     {product.name}
                   </h3>
                 </Link>
@@ -75,7 +75,7 @@ export const Wishlist = () => {
                 </div>
                 <button 
                   onClick={() => handleMoveToCart(product)}
-                  className="mt-auto w-full bg-[#ef233c] hover:bg-[#ef233c] text-white py-2 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
+                  className="mt-auto w-full bg-[#D4AF37] hover:bg-[#D4AF37] text-white py-2 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
                 >
                   <ShoppingCart className="h-4 w-4" /> Move to Cart
                 </button>
